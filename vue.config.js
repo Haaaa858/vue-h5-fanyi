@@ -3,6 +3,7 @@ const { merge } = require('webpack-merge')
 
 module.exports = {
   lintOnSave: true,
+  publicPath:  process.env.VUE_BUILD_THEME === "github" ?  "/vue-h5-fanyi/": undefined,
   transpileDependencies: [
     'vue-echarts',
     'resize-detector'
